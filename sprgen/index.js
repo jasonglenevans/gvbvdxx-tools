@@ -37,7 +37,7 @@ function makeSprites(canvas,context,images) {
 		if (putY+image.height*sizeMultiplier+spacingValue > jsonOut.spriteSheetHeight) {
 			jsonOut.spriteSheetHeight = putY+image.height*sizeMultiplier+spacingValue;
 		}
-		jsonOut.sprites.push({x:putX,y:putY,width:image.width,height:image.height});
+		jsonOut.sprites.push({x:putX,y:putY,width:image.width,height:image.height,name:image.name});
 	}
 	//draw the sprites
 	canvas.width = jsonOut.spriteSheetWidth;
